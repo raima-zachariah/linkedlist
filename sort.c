@@ -1,4 +1,4 @@
-void sort(node* &top)
+void sort(node ** top)
 {
 	int count = 0;
 	node* tmp = top;
