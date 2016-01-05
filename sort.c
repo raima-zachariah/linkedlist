@@ -4,7 +4,7 @@ void sort(node* &top)
 	node* tmp = top;
 	while(tmp!=NULL)
 	{
-		tmp = tmp->next;
+		tmp = tmp->link;
 		count++;
 	}
 
@@ -16,13 +16,12 @@ void sort(node* &top)
 		node *inode;
 		printf("Hey!\n");
 		int i;
-		for(i=0, inode=top; i<count-k-1; i++, inode=inode->next)
-			if(inode->data > inode->next->data)
+		for(i=0, inode=top; i<count-k-1; i++, inode=inode->link)
+			if(inode->num > inode->link->num)
 			{
-				int tmpdata = inode->data;
-				inode->data = inode->next->data;
-				inode->next->data = tmpdata;
+				int tmpnum = inode->num;
+				inode->num = inode->link->num;
+				inode->link->num = tmpnum;
 			}
 	}
 }
-
