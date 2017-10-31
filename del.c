@@ -10,7 +10,7 @@ temp=(*beg)->link;
     free(*beg);
     (*beg)=temp;
    }
-
+//Comment
 
   
 else
