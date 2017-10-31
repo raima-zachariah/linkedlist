@@ -1,8 +1,10 @@
 void sort(node ** top)
 {
+	
 	int count = 0;
+	
 	node* tmp = top;
-	while(tmp!=NULL)
+	while(tmp!=NULL)//comments
 	{
 		tmp = tmp->link;
 		count++;
