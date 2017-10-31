@@ -12,7 +12,7 @@ void sort(struct node **);
 int main()
 {struct node *top;
 top=NULL;
-
+//Comment
 
 char ch;
 
